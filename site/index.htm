@@ -11,11 +11,19 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+        @media screen and (min-width: 1600px) {
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
 
         .boxes {
-            position: relative;
+            position: relative;            
         }
         .boxes-path {
+            /* size: 1600 x 900 */
             /* offset-path: path("M 85 176 C 143 126 150 66 272 63 C 394 60 526 115 464 180 C 402 245 288 97 155 256 C 22 415 73 415 151 363 C 229 311 332 258 429 330 C 526 402 667 460 701 312 C 735 164 628 282 570 197 C 512 112 597 52 724 78"); */
             offset-path: path("M170 352C286 252 300 132 544 126 788 120 1052 230 928 360 804 490 576 194 310 512 44 830 146 830 302 726 458 622 664 516 858 660 1052 804 1334 920 1402 624 1470 328 1256 564 1140 394 1024 224 1194 104 1448 156");
         }
@@ -28,14 +36,6 @@
             background-color: white;
             
         }
-        /*#boxes-path {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 800px;
-            height: 450px;
-            background-color: aquamarine;
-        }*/
         #boxes-box-1 { offset-distance: 1%; }
         #boxes-box-2 { offset-distance: 8%; }
         #boxes-box-3 { offset-distance: 16%; }
