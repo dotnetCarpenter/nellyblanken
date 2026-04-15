@@ -48,9 +48,30 @@
         #boxes-box-10 { offset-distance: 86%; }
         #boxes-box-11 { offset-distance: 94%; }
         #boxes-box-12 { offset-distance: 100%; }
+
+        svg {
+            stroke: aquamarine;
+            stroke-width: 1rem;
+            fill: none;
+        }
+        .wireframe svg {
+            stroke: black;
+            stroke-width: 1;
+        }
+        .wireframe svg path {
+            stroke-dasharray: 10;
+        }
+        
+        /* boxes */
+        .wireframe  .boxes-box {
+            border: .5rem solid black;
+        }
+         .wireframe .boxes img {
+            filter: grayscale(100%);
+        }
     </style>
 </head>
-<body>
+<body class="wireframe">
     <div class="boxes">
         <div class="boxes-path boxes-box" id="boxes-box-1"><img loading="lazy" src="https://placecats.com/200/200"/></div>
         <div class="boxes-path boxes-box" id="boxes-box-2"><img loading="lazy" src="https://placecats.com/200/200"/></div>
@@ -66,11 +87,19 @@
         <div class="boxes-path boxes-box" id="boxes-box-12"><img loading="lazy" src="https://placecats.com/200/200"/></div>
     </div>
     <svg width="1600" height="900" xmlns="http://www.w3.org/2000/svg">
-    <path
-        d="M170 352C286 252 300 132 544 126 788 120 1052 230 928 360 804 490 576 194 310 512 44 830 146 830 302 726 458 622 664 516 858 660 1052 804 1334 920 1402 624 1470 328 1256 564 1140 394 1024 224 1194 104 1448 156"
-        stroke="aquamarine"
-        stroke-width="10"
-        fill="none"/>
+        <path
+            d="M170 352C286 252 300 132 544 126 788 120 1052 230 928 360 804 490 576 194 310 512 44 830 146 830 302 726 458 622 664 516 858 660 1052 804 1334 920 1402 624 1470 328 1256 564 1140 394 1024 224 1194 104 1448 156"
+            />
     </svg>
+    <script>
+        const search = new URL(document.URL).search.substring(1).split("=");
+        if (search[0] === "wireframe" && search[1] === "true") {
+            document.body.classList.add("wireframe");
+            console.log("Wireframe mode enabled");
+        } else {
+            document.body.classList.remove("wireframe");
+            console.log("Wireframe mode disabled");
+        }
+    </script>
 </body>
 </html>
