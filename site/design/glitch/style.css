@@ -1,21 +1,26 @@
 body {
     background-color: #f4f4f4;
-/*
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; */
 }
-picture {
+article {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 20%;
     bottom: 20%;
-    right: 20%;    
+    right: 20%;
+
+    h2 {
+        word-wrap: break-word;
+        height: auto;
+        vertical-align: bottom;
+    }
 }
+
 .glitch-image {
     position: absolute;
-    top: 0;
+    top: 3rem;
     left: 0;
     bottom: 0;
     right: 0;

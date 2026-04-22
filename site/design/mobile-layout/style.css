@@ -1,0 +1,19 @@
+body {
+    background-color: #f4f4f4;
+}
+article {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    h2 {
+        word-wrap: break-word;
+        height: auto;
+        vertical-align: bottom;
+    }
+
+    .glitch-image {
+        position: absolute;
+        border: 0.8rem solid rgba(204, 49, 158, 0.6);
+        border-radius: 0 .4rem;
+    }
+}

@@ -3,7 +3,22 @@
 https://dotnetcarpenter.github.io/nellyblanken/
 
 
+Hello :)
 
+1. Txt per project = 
+Title + year, materials, size, length when applicable + Txt (piece statement) between 150 to 400 words + sponsors when applicable (name + logo)
+
+2. I can retake better images, especially for prints
+
+3. Not everything has to be in there, it's more for you to get an idea of my work
+
+4. No track/video full length
+
+5. Several projects have sound, like Transmission, Breaking Point, Onward
+
+6. I have a ton of images (like +32G for Cerebronze) and can provide more doc/better res, I just don't have the time rn to sort it out
+
+7. I'm insanely busy for the next 12 days, but I will have a lot of time after that
 
 ```
 K = kilo
