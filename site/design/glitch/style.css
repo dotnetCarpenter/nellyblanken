@@ -1,14 +1,17 @@
 body {
-    position: static;
-
-    /* background: #000;
+    background-color: #f4f4f4;
+/*
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; */
 }
 picture {
-    overflow: hidden;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    bottom: 20%;
+    right: 20%;    
 }
 .glitch-image {
     position: absolute;
@@ -19,11 +22,13 @@ picture {
     background-image: url("./pic1.png");
     background-position: center;
     background-size: cover;
+    border: 0.8rem solid rgba(204, 49, 158, 0.6);
+    border-radius: 0 .4rem;
 }
 .glitch-image:nth-child(2) {
     animation: glitch-horizontal 3s infinite linear alternate;
 }
-.glitch-image:nth-child(3) {
+ .glitch-image:nth-child(3) {
     animation: glitch-horizontal-2 2s infinite linear alternate;
 }
 .glitch-image:nth-child(4) {
@@ -31,9 +36,6 @@ picture {
 }
 .glitch-image:nth-child(5) {
     animation: glitch-flash 0.3s steps(1, end) infinite;
-}
-.glitch-image:nth-child(6) {
-    animation: glitch-flash-2 0.2s steps(1, end) infinite;
 }
 .grainy {
     filter: url("#noise");
@@ -46,6 +48,39 @@ picture {
 }
 .offset:nth-of-type(even) {
     filter: url("#magenta");
+}
+.outro {
+    animation: outro 5s linear;
+    animation-fill-mode: forwards;
+    filter: url("#cyan");
+}
+
+@keyframes outro {
+    0%,
+    80% {
+        opacity: 0;
+    }
+    84% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    90%,
+    100% {
+        opacity: 1;
+        border-color: rgba(19, 226, 226, 0.8);
+    }
+}
+@keyframes intro {
+    0% {
+        opacity: 1;
+    }
+    10%,
+    100% {
+        opacity: 0;
+        border-color: rgba(204, 49, 158, 0.6);
+    }
 }
 
 @keyframes glitch-horizontal {

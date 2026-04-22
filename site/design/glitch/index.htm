@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glitch</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="imageSwitcher.js" type="module"></script> -->
 </head>
 <body>
 <picture>
@@ -13,18 +14,20 @@
   <div class="glitch-image offset"></div>
   <div class="glitch-image offset"></div>
   <div class="glitch-image grainy"></div>
+  <!-- <div class="glitch-image outro"></div> -->
 </picture>
+
 <svg width="0" height="0" aria-hidden="true">
   <defs>
-    <filter id="noise" color-interpolation-filters="sRGB">
+    <filter id="noise" color-interpolation-filters="sRGB" width="1" height="1" x="0" y="0">
       <feTurbulence result="turbulence" type="turbulence" baseFrequency="0.25" numOctaves="1"></feTurbulence>
       <feBlend in="turbulence" in2="SourceGraphic" mode="screen"></feBlend>
     </filter>
-    <filter id="cyan" color-interpolation-filters="sRGB">
+    <filter id="cyan" color-interpolation-filters="sRGB" width="1" height="1" x="0" y="0">
       <feColorMatrix in="SourceGraphic" type="matrix" result="cyanTones" values="2 0 0 0 0  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0 "></feColorMatrix>
       <feOffset in="cyanTones" result="nudgeRight" dx="2" dy="0"></feOffset>
     </filter>
-    <filter id="magenta" color-interpolation-filters="sRGB">
+    <filter id="magenta" color-interpolation-filters="sRGB" width="1" height="1" x="0" y="0">
       <feColorMatrix in="SourceGraphic" type="matrix" result="magentaTones" values="1 0 0 0 0.9  0 1 0 0 0  0 0 1 0 0.9  0 0 0 1 0 "></feColorMatrix>
       <feOffset in="magentaTones" result="nudgeLeft" dx="-2" dy="0"></feOffset>
     </filter>
