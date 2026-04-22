@@ -1,0 +1,9 @@
+{
+  "name": "nellyblanken.com",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server -d ./site 8000"
+  }
+}
