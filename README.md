@@ -2,10 +2,13 @@
 
 https://dotnetcarpenter.github.io/nellyblanken/
 
+SVG filter: https://kazzkiq.github.io/svg-color-filter/
+
+Effect Inspiration: https://codepen.io/search?q=svg+glitch+effect&cursor=Mg
 
 Hello :)
 
-1. Txt per project = 
+1. Txt per project =
 Title + year, materials, size, length when applicable + Txt (piece statement) between 150 to 400 words + sponsors when applicable (name + logo)
 
 2. I can retake better images, especially for prints

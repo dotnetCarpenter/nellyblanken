@@ -13,8 +13,7 @@ article {
 
     h2 {
         word-wrap: break-word;
-        height: auto;
-        vertical-align: bottom;
+        word-break: break-all;
     }
 }
 
