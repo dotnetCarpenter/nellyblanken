@@ -1,0 +1,104 @@
+---
+
+---
+
+<body>
+	<div class="boxes">
+		<div class="boxes-path boxes-box" id="boxes-box-1"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-2"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-3"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-4"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-5"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-6"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-7"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-8"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-9"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-10"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-11"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-12"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+		<div class="boxes-path boxes-box" id="boxes-box-13"><img loading="lazy" src="https://placecats.com/200/200"/></div>
+	</div>
+	<svg width="1600" height="900" xmlns="http://www.w3.org/2000/svg">
+		<path
+			d="M170 352C286 252 300 132 544 126 788 120 1052 230 928 360 804 490 576 194 310 512 44 830 146 830 302 726 458 622 664 516 858 660 1052 804 1334 920 1402 624 1470 328 1256 564 1140 394 1024 224 1194 104 1448 156"
+		/>
+	</svg>
+</body>
+<script>
+	"use strict";
+	const search = new URL(document.URL).search.substring(1).split("=");
+	if (search[0] === "wireframe" && search[1] === "true") {
+		document.body.classList.add("wireframe");
+		console.log("Wireframe mode enabled");
+	} else {
+		document.body.classList.remove("wireframe");
+		console.log("Wireframe mode disabled");
+	}
+</script>
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f4f4f4;
+	}
+	@media screen and (min-width: 1600px) {
+		body {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	.boxes {
+		position: relative;
+	}
+	.boxes-path {
+		/* size: 1600 x 900 */
+		/* offset-path: path("M 85 176 C 143 126 150 66 272 63 C 394 60 526 115 464 180 C 402 245 288 97 155 256 C 22 415 73 415 151 363 C 229 311 332 258 429 330 C 526 402 667 460 701 312 C 735 164 628 282 570 197 C 512 112 597 52 724 78"); */
+		offset-path: path("M170 352C286 252 300 132 544 126 788 120 1052 230 928 360 804 490 576 194 310 512 44 830 146 830 302 726 458 622 664 516 858 660 1052 804 1334 920 1402 624 1470 328 1256 564 1140 394 1024 224 1194 104 1448 156");
+	}
+	.boxes-box {
+		position: absolute;
+		width: 200px;
+		height: 200px;
+
+		border: 1rem solid red;
+		background-color: white;
+
+	}
+	#boxes-box-1 { offset-distance: 1%; }
+	#boxes-box-2 { offset-distance: 8%; }
+	#boxes-box-3 { offset-distance: 16%; }
+	#boxes-box-4 { offset-distance: 23%; }
+	#boxes-box-5 { offset-distance: 32%; }
+	#boxes-box-6 { offset-distance: 42%; }
+	#boxes-box-7 { offset-distance: 55%; }
+	#boxes-box-8 { offset-distance: 62%; }
+	#boxes-box-9 { offset-distance: 68%; }
+	#boxes-box-10 { offset-distance: 77%; }
+	#boxes-box-11 { offset-distance: 86%; }
+	#boxes-box-12 { offset-distance: 94%; }
+	#boxes-box-13 { offset-distance: 100%; }
+
+	svg {
+		stroke: aquamarine;
+		stroke-width: 1rem;
+		fill: none;
+	}
+	.wireframe svg {
+		stroke: black;
+		stroke-width: 1;
+	}
+	.wireframe svg path {
+		stroke-dasharray: 10;
+	}
+
+	/* boxes */
+	.wireframe  .boxes-box {
+		border: .5rem solid black;
+	}
+		.wireframe .boxes img {
+		filter: grayscale(100%);
+	}
+</style>
