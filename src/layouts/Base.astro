@@ -32,7 +32,7 @@ const { title, description, image, type = "website" } = Astro.props;
 		<meta name="msapplication-config" content={`${baseUrl}/browserconfig.xml`}>
 		<link rel="manifest" href={`${baseUrl}/manifest.json`}>
 		<meta name="theme-color" content="#000">
-		<meta name="description" content="Nelly Blanken is an interdisciplinary artist rooted in multimedia practices, theater, literature, and metalwork. Combining sculptural elements with sound, programming, and sometimes video, her work explores themes of identity and memory, transmission and distortion, as well as control, surveillance, and the relationship between humans and their environment.">
+		<meta name="description" content={description}>
 	</head>
 	<body>
 		<header class="site-header">
