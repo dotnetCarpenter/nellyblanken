@@ -1,13 +1,15 @@
 ---
 import Base from "../layouts/Base.astro";
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Base>
 	<h1>Design Overview</h1>
 	<ol>
-        <li><a href="design/path-layout/?wireframe=true">Path Layout</a></li>
-        <li><a href="design/path-layout/">Path Layout Because Colours</a></li>
-        <li><a href="design/glitch/">Glitch Effect</a></li>
-        <li><a href="design/glitch2/">Glitch Effect 2</a></li>
-    </ol>
-<Base>
+		<li><a href={`${baseUrl}/design/path-layout/?wireframe=true`}>Path Layout</a></li>
+		<li><a href={`${baseUrl}/design/path-layout/`}>Path Layout Because Colours</a></li>
+		<li><a href={`${baseUrl}/design/glitch/`}>Glitch Effect</a></li>
+		<li><a href={`${baseUrl}/design/glitch2/`}>Glitch Effect 2</a></li>
+	</ol>
+</Base>
