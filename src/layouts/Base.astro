@@ -48,6 +48,8 @@ const { title, description, image, type = "website" } = Astro.props;
 		<style is:global>
 			/*
 			 * The initial order in which layers are declared indicates which layer has precedence.
+			 * In this case, the 'base' layer is declared first, so it has the lowest precedence.
+			 * Comma seperated list.
 			 */
 			@layer base;
 

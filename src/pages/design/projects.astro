@@ -1,0 +1,97 @@
+---
+import Base from "../../layouts/Base.astro";
+import Project from "../../components/Project.astro";
+import pic from "@assets/pic1.png";
+---
+<Base>
+    <section class="projects">
+        <h2 class="projects__title">Projects</h2>
+        <div class="projects__list">
+            <Project title="1" imgPath={pic.src} />
+            <Project title="2" imgPath={pic.src} />
+            <Project title="2024 Sound NeuroscienceOfAesthetics" imgPath={pic.src} />
+            <Project title="4" imgPath={pic.src} />
+            <Project title="5" imgPath={pic.src} />
+            <Project title="6" imgPath={pic.src} />
+            <Project title="7" imgPath={pic.src} />
+        </div>
+    </section>
+    <svg width="0" height="0" aria-hidden="true">
+        <defs>
+            <filter
+                id="noise"
+                color-interpolation-filters="sRGB"
+                width="1" height="1"x="0"y="0"
+            >
+                <feTurbulence
+                result="turbulence" type="turbulence" baseFrequency="0.25"
+                numOctaves="1"
+                ></feTurbulence>
+                <feBlend in="turbulence" in2="SourceGraphic" mode="screen"></feBlend>
+            </filter>
+            <filter
+                id="cyan"
+                color-interpolation-filters="sRGB"
+                width="1" height="1"x="0"y="0"
+            >
+                <feColorMatrix
+                    in="SourceGraphic" type="matrix"
+                    result="cyanTones"
+                    values="2 0 0 0 0  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0 "
+                ></feColorMatrix>
+                <feOffset in="cyanTones" result="nudgeRight" dx="2" dy="0"></feOffset>
+            </filter>
+            <filter
+                id="magenta"
+                color-interpolation-filters="sRGB"
+                width="1" height="1"x="0"y="0"
+            >
+                <feColorMatrix
+                    in="SourceGraphic"
+                    type="matrix"
+                    result="magentaTones"
+                    values="1 0 0 0 0.9  0 1 0 0 0  0 0 1 0 0.9  0 0 0 1 0 "
+                ></feColorMatrix>
+                <feOffset
+                    in="magentaTones"
+                    result="nudgeLeft"
+                    dx="-2"
+                    dy="0"
+                ></feOffset>
+            </filter>
+
+            <!-- https://kazzkiq.github.io/svg-color-filter/ -->
+            <filter id="purple" color-interpolation-filters="sRGB">
+                <feColorMatrix
+                    in="SourceGraphic"
+                    type="matrix"
+                    values="1 -0.2 0    0   0
+                            0  1   0.4 -0.2 0
+                            0  1.2 1    0.1 0
+                            0  0   1.7  1   0"/>
+            </filter>
+        </defs>
+    </svg>
+</Base>
+
+<style>
+    .projects {
+        max-width: var(--wide-width);
+        margin: 0 auto;
+    }
+
+    .projects__title {
+        font-family: var(--font-serif);
+        font-size: var(--font-size-2xl);
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .projects__list {
+        display: grid;
+        /* min 300px wide */
+        grid-template-columns: repeat(auto-fit, minmax(calc(300 / 16 * 1rem), 1fr));
+        gap: var(--spacing-lg);
+    }
+</style>
