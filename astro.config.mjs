@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, fontProviders } from "astro/config";
+import { defineConfig, fontProviders, svgoOptimizer } from "astro/config";
 import { fileURLToPath, URL } from 'node:url';
 
 // https://astro.build/config
@@ -32,4 +32,7 @@ export default defineConfig({
 			fallbacks: ["serif"],
 		},
 	],
+	experimental: {
+		svgOptimizer: svgoOptimizer()
+	},
 });
