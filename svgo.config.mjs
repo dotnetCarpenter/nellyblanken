@@ -1,0 +1,47 @@
+export default {
+    plugins: [
+        {
+        name: 'preset-default',
+        params: {
+            overrides: {
+                removeHiddenElems: false,
+            },
+        },
+        },
+    ],
+/*  plugins: [
+        'removeDoctype',
+        'removeXMLProcInst',
+        'removeComments',
+        'removeMetadata',
+        'removeEditorsNSData',
+        'cleanupAttrs',
+        'mergeStyles',
+        'inlineStyles',
+        'minifyStyles',
+        'cleanupIds',
+        'removeUselessDefs',
+        'cleanupNumericValues',
+        'convertColors',
+        'removeUnknownsAndDefaults',
+        'removeNonInheritableGroupAttrs',
+        'removeUselessStrokeAndFill',
+        'cleanupEnableBackground',
+        // 'removeHiddenElems',
+        'removeEmptyText',
+        'convertShapeToPath',
+        'convertEllipseToCircle',
+        'moveElemsAttrsToGroup',
+        'moveGroupAttrsToElems',
+        'collapseGroups',
+        'convertPathData',
+        'convertTransform',
+        'removeEmptyAttrs',
+        'removeEmptyContainers',
+        'removeUnusedNS',
+        'mergePaths',
+        'sortAttrs',
+        'sortDefsChildren',
+        'removeDesc',
+    ],*/
+};
