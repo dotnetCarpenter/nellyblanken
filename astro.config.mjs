@@ -33,6 +33,17 @@ export default defineConfig({
 		},
 	],
 	experimental: {
-		svgOptimizer: svgoOptimizer()
+		svgOptimizer: {
+			...svgoOptimizer({
+				plugins: [{
+					name: 'preset-default',
+					params: {
+						overrides: { // keep hidden defs/filter elements, as they are used for the glitch effect
+							removeHiddenElems: false,
+						},
+					},
+				}]
+			}),
+		}
 	},
 });
