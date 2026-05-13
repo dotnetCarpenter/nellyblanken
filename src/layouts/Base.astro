@@ -108,7 +108,8 @@ const { title, description, image, type = "website" } = Astro.props;
 				/* Dark mode via system preference (when no explicit class) */
 				@media (prefers-color-scheme: dark) {
 					:root:not(.light) {
-						--color-bg: #0a0a0a;
+						/* --color-bg: #0a0a0a; */
+						--color-bg: hsla(293, 99%, 36%, 0.8);
 						--color-text: #f5f5f5;
 						--color-muted: #a1a1aa;
 						--color-border: #27272a;

@@ -21,24 +21,31 @@ const { imgPath, title } = Astro.props;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
     grid-template-areas:
-        "title"
-        "image";
+    "title"
+    "image";
+    align-items: end;
     height: calc(300 / 16 * 1rem);
 
     .project__title {
-        position-anchor: --project-image;
+        /* position-anchor: project-image; */
         grid-area: title;
         align-self: end;
+        max-height: calc(60 / 16 * 1rem);
 
         margin-bottom: 0;
+        align-self: end;
         word-wrap: break-word;
         word-break: break-all;
     }
 
     .project__image {
-        anchor-name: --project-image;
+        /* anchor-name: project-image; */
         grid-area: image;
+        align-self: end;
         position: relative;
+        height: calc(240 / 16 * 1rem);
+
+        border-radius: 0 .4rem;
     }
 
     .project--color-filter {
@@ -52,10 +59,11 @@ const { imgPath, title } = Astro.props;
         bottom: 0;
         right: 0;
 
-        background-position: center;
         background-size: cover;
-        border: 0.8rem solid rgba(204, 49, 158, 0.6);
-        border-radius: 0 .4rem;
+        background-position: center;
+        border: 0.8rem transparent rgba(204, 49, 158, 0.6);
+        border-radius: 0 0.4rem;
+        /* mix-blend-mode: normal; */
     }
 }
 
