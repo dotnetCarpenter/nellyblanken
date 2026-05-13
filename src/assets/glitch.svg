@@ -3,7 +3,7 @@
         <filter
             id="noise"
             color-interpolation-filters="sRGB"
-            width="1" height="1"x="0"y="0"
+            width="1" height="1" x="0" y="0"
         >
             <feTurbulence
             result="turbulence" type="turbulence" baseFrequency="0.25"
@@ -14,7 +14,7 @@
         <filter
             id="cyan"
             color-interpolation-filters="sRGB"
-            width="1" height="1"x="0"y="0"
+            width="1" height="1" x="0" y="0"
         >
             <feColorMatrix
                 in="SourceGraphic" type="matrix"
@@ -26,7 +26,7 @@
         <filter
             id="magenta"
             color-interpolation-filters="sRGB"
-            width="1" height="1"x="0"y="0"
+            width="1" height="1" x="0" y="0"
         >
             <feColorMatrix
                 in="SourceGraphic"
