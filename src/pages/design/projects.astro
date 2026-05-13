@@ -1,21 +1,29 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Project from "../../components/Project.astro";
-import pic from "@assets/pic1.png";
+// import pic from "@assets/pic1.png";
+import { getCollection, getEntry } from 'astro:content';
+
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+const allProjects = (await getCollection('projects'))
+    .sort((a, b) => b.data.year - a.data.year); // Sort by year in descending order
+
+// TODO: uncomment when https://github.com/withastro/astro/pull/16681/ is merged
+// import SvgFilter from "@assets/glitch.svg";
 ---
 <Base>
     <section class="projects">
         <h2 class="projects__title">Projects</h2>
         <div class="projects__list">
-            <Project title="1" imgPath={pic.src} />
-            <Project title="2" imgPath={pic.src} />
-            <Project title="2024 Sound NeuroscienceOfAesthetics" imgPath={pic.src} />
-            <Project title="4" imgPath={pic.src} />
-            <Project title="5" imgPath={pic.src} />
-            <Project title="6" imgPath={pic.src} />
-            <Project title="7" imgPath={pic.src} />
+            {allProjects.map(project => (
+                <Project title={project.data.title} imgPath={project.data["posterImage"]} />
+            ))}
         </div>
     </section>
+
+    <!-- TODO: uncomment when https://github.com/withastro/astro/pull/16681/ is merged -->
+    <!-- <SvgFilter /> -->
     <svg width="0" height="0" aria-hidden="true">
         <defs>
             <filter

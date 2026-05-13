@@ -1,14 +1,17 @@
 ---
+import { Image, getImage } from "astro:assets";
 const { imgPath, title } = Astro.props;
+const imgSrc = await getImage({ src: imgPath, format: "webp" });
 ---
 <article class="project">
     <h3 class="project__title">{title}</h3>
     <picture class="project__image">
-        <div class="glitch-image project--color-filter" style={`background-image: url("${imgPath}")`}></div>
-        <div class="glitch-image grainy" style={`background-image: url("${imgPath}")`}></div>
-        <div class="glitch-image offset" style={`background-image: url("${imgPath}")`}></div>
-        <div class="glitch-image offset" style={`background-image: url("${imgPath}")`}></div>
-        <div class="glitch-image grainy" style={`background-image: url("${imgPath}")`}></div>
+        <!-- <img src={imgSrc.src} alt={title} width={300} height={240} /> -->
+        <div class="glitch-image project--color-filter" style={`background-image: url("${imgSrc.src}")`}></div>
+        <div class="glitch-image grainy" style={`background-image: url("${imgSrc.src}")`}></div>
+        <div class="glitch-image offset" style={`background-image: url("${imgSrc.src}")`}></div>
+        <div class="glitch-image offset" style={`background-image: url("${imgSrc.src}")`}></div>
+        <div class="glitch-image grainy" style={`background-image: url("${imgSrc.src}")`}></div>
         <!-- <div class="glitch-image outro"></div> -->
     </picture>
 </article>
