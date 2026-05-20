@@ -1,8 +1,32 @@
 ---
 
 ---
+<body></body>
 <style is:global>
     body {
-        background: hsla(293, 99%, 36%, 0.8);
+        width: 100vw;
+        height: 100vh;
+
+        /* background: hsla(293, 99%, 36%, 0.8); */
+        /* background: #0a0a0a; */
+        background: linear-gradient(
+            0.25turn,
+            #242424,
+            #242424 30%,
+            hsla(293, 99%, 36%, 0.8) 30%,
+            hsla(293, 99%, 36%, 0.8) 70%
+        );
+
+        /* background: linear-gradient(to right top, #242424, hsla(293, 99%, 36%, 0.8)); */
+
+        background: linear-gradient(
+            45deg,
+            hsla(293, 99%, 36%, 0.8),
+            hsla(293, 99%, 36%, 0.8) 10%,
+            #242424 10%,
+            #242424 30%,
+            hsla(293, 99%, 36%, 0.8) 30%,
+            hsla(293, 99%, 36%, 0.8) 70%
+        )
     }
 </style>

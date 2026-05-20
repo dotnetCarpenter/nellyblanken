@@ -139,7 +139,18 @@ const { title, description, type = "website" } = Astro.props;
 					font-size: var(--font-size-base);
 					line-height: 1.6;
 					color: var(--color-text);
-					background: var(--color-bg);
+
+					background: repeating-linear-gradient(
+						45deg,
+						var(--color-bg),
+						var(--color-bg) 10%,
+						#242424 10%,
+						#242424 20%,
+						var(--color-bg) 20%,
+						var(--color-bg) 35%
+					);
+					/* background: var(--color-bg); */
+
 					-webkit-font-smoothing: antialiased;
 					min-height: 100vh;
 				}

@@ -38,19 +38,18 @@ const imgSrc = await getImage({ src: imgPath, format: "webp" });
         position: absolute;
         top: 0;
         right: 0rem;
-        z-index: 1;
 
-        margin: -.6rem .6rem;
+        margin: -.6rem .6rem 0 0;
 
         font-weight: bold;
         font-size: var(--font-size-3xl);
         -webkit-text-stroke: 1px var(--color-text);
         color: transparent;
+        mix-blend-mode: hard-light;
 
         /* -webkit-text-stroke: 1px contrast-color(var(--color-text)); */
 
-        /* filter: invert(1);
-        mix-blend-mode: difference; */
+        /* filter: invert(1); */
         /* filter: contrast(175%); */
 
         /* background-color: black; */
