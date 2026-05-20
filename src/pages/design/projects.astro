@@ -1,9 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
-// import GlitchEffect from "@assets/glitch.svg";
-import GlitchEffect from "../../assets/glitch.svg";
+import GlitchEffect from "@assets/glitch.svg";
 import Project from "../../components/Project.astro";
-// import pic from "@assets/pic1.png";
 import { getCollection, getEntry } from 'astro:content';
 
 // Get all entries from a collection.
@@ -11,8 +9,6 @@ import { getCollection, getEntry } from 'astro:content';
 const allProjects = (await getCollection('projects'))
     .sort((a, b) => b.data.year - a.data.year); // Sort by year in descending order
 
-// TODO: uncomment when https://github.com/withastro/astro/pull/16681/ is merged
-// import SvgFilter from "@assets/glitch.svg";
 ---
 <Base>
     <section class="projects">
