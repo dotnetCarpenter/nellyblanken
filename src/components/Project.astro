@@ -48,6 +48,7 @@ const random = (min:number, max:number) => (Math.random() * (max - min)).toFixed
         font-size: var(--font-size-3xl);
         -webkit-text-stroke: 1px var(--color-text);
         color: transparent;
+        transition: all .5s allow-discrete;
 
         @media (prefers-color-scheme: dark) {
             mix-blend-mode: hard-light;
@@ -63,6 +64,10 @@ const random = (min:number, max:number) => (Math.random() * (max - min)).toFixed
 
         /* background-color: black; */
         /* background-clip: text; */
+    }
+    &:hover .project__year {
+        color: var(--color-text);
+        -webkit-text-stroke: 0px var(--color-text);
     }
 
     .project__title {
@@ -122,7 +127,7 @@ const random = (min:number, max:number) => (Math.random() * (max - min)).toFixed
     animation: random(3s, 6s) glitch-flash-2 calc(var(--data-random1) * 0.5s) infinite linear alternate;
 }
 .glitch-image:nth-child(5) {
-    animation: random(0.1s, .5s) glitch-flash calc(var(--data-random2) * 0.5s) steps(1, end) infinite;
+    animation: random(0.3s, 1s) glitch-flash calc(var(--data-random2) * 0.5s) steps(1, end) infinite;
 }
 .grainy {
     filter: url("#purple") url("#noise");
