@@ -1,5 +1,5 @@
 ---
-import { Image, getImage } from "astro:assets";
+import { getImage } from "astro:assets";
 const { imgPath, title } = Astro.props;
 const imgSrc = await getImage({ src: imgPath, format: "webp" });
 ---
