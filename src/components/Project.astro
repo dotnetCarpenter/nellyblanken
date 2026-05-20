@@ -1,10 +1,11 @@
 ---
 import { getImage } from "astro:assets";
-const { imgPath, title } = Astro.props;
+const { imgPath, title, year, sponsors } = Astro.props;
 const imgSrc = await getImage({ src: imgPath, format: "webp" });
 ---
 <article class="project">
     <h3 class="project__title">{title}</h3>
+    {sponsors?.logo && <img class="project__sponsors" src={sponsors.logo} alt="{sponsors.name}" />}
     <picture class="project__image">
         <!-- <img src={imgSrc.src} alt={title} width={300} height={240} /> -->
         <div class="glitch-image project--color-filter" style={`background-image: url("${imgSrc.src}")`}></div>
@@ -13,12 +14,13 @@ const imgSrc = await getImage({ src: imgPath, format: "webp" });
         <div class="glitch-image offset" style={`background-image: url("${imgSrc.src}")`}></div>
         <div class="glitch-image grainy" style={`background-image: url("${imgSrc.src}")`}></div>
         <!-- <div class="glitch-image outro"></div> -->
+        <p class="project__year">{year}</p>
     </picture>
 </article>
 
 <style>
 .project {
-    font-optical-sizing: auto;
+    position: relative;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -27,16 +29,44 @@ const imgSrc = await getImage({ src: imgPath, format: "webp" });
     "title"
     "image";
     align-items: end;
+
     height: calc(300 / 16 * 1rem);
+
+    font-optical-sizing: auto;
+
+    .project__year {
+        position: absolute;
+        top: 0;
+        right: 0rem;
+        z-index: 1;
+
+        margin: -.6rem .6rem;
+
+        font-weight: bold;
+        font-size: var(--font-size-3xl);
+        -webkit-text-stroke: 1px var(--color-text);
+        color: transparent;
+
+        /* -webkit-text-stroke: 1px contrast-color(var(--color-text)); */
+
+        /* filter: invert(1);
+        mix-blend-mode: difference; */
+        /* filter: contrast(175%); */
+
+        /* background-color: black; */
+        /* background-clip: text; */
+    }
 
     .project__title {
         /* position-anchor: project-image; */
         grid-area: title;
-        align-self: end;
-        max-height: calc(60 / 16 * 1rem);
 
-        margin-bottom: 0;
-        align-self: end;
+        display:flex;
+        align-items: end;
+        margin-bottom: .1rem;
+
+        height: calc(60 / 16 * 1rem);
+
         word-wrap: break-word;
         word-break: break-all;
     }

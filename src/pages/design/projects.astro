@@ -15,7 +15,7 @@ const allProjects = (await getCollection('projects'))
         <h2 class="projects__title">Projects</h2>
         <div class="projects__list">
             {allProjects.map(project => (
-                <Project title={project.data.title} imgPath={project.data["posterImage"]} />
+                <Project title={project.data.title} imgPath={project.data["posterImage"]} year={project.data.year} sponsors={project.data.sponsors} />
             ))}
         </div>
     </section>
@@ -44,7 +44,7 @@ const allProjects = (await getCollection('projects'))
     .projects__list {
         display: grid;
         /* min 300px wide */
-        grid-template-columns: repeat(auto-fit, minmax(calc(300 / 16 * 1rem), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(calc(360 / 16 * 1rem), 1fr));
         gap: var(--spacing-lg);
     }
 </style>
