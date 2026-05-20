@@ -6,38 +6,38 @@
     "posterImage": "./2025_Performance+Install_EverytingIsNotEnough/20250810_163111.jpg",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id1",
     "title": "Install_Transmission",
     "year": 2025,
-    "images": ["./2025_Install_Transmission/3_Transmission_NellyBlanken.png", "./2025_Install_Transmission/2_Transmission_NellyBlanken.png"],
-    "posterImage": "./2025_Install_Transmission/3_Transmission_NellyBlanken.png",
+    "images": ["./2025_Install_Transmission/2_Transmission_NellyBlanken.png", "./2025_Install_Transmission/3_Transmission_NellyBlanken.png"],
+    "posterImage": "./2025_Install_Transmission/2_Transmission_NellyBlanken.png",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id2",
     "title": "Sculpture_Cerebronze",
     "year": 2024,
-    "images": ["./2024_Sculpture_Cerebronze/4.jpg", "./2024_Sculpture_Cerebronze/3.jpg"],
-    "posterImage": "./2024_Sculpture_Cerebronze/4.jpg",
+    "images": ["./2024_Sculpture_Cerebronze/3.jpg", "./2024_Sculpture_Cerebronze/4.jpg"],
+    "posterImage": "./2024_Sculpture_Cerebronze/3.jpg",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id3",
     "title": "Install+Publication_Onward",
     "year": 2024,
-    "images": ["./2024_Install+Publication_Onward/30. Exhibition Day 4.JPG", "./2024_Install+Publication_Onward/24. Vernissage day 3.jpg", "./2024_Install+Publication_Onward/27. Vernissage day 3.jpg"],
+    "images": ["./2024_Install+Publication_Onward/30. Exhibition Day 4.JPG", "./2024_Install+Publication_Onward/27. Vernissage day 3.jpg", "./2024_Install+Publication_Onward/24. Vernissage day 3.jpg"],
     "posterImage": "./2024_Install+Publication_Onward/30. Exhibition Day 4.JPG",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id4",
     "title": "Sculpture_DreamOfFailure",
@@ -46,8 +46,8 @@
     "posterImage": "./2023_Sculpture_DreamOfFailure/20231031_084316.jpg",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id5",
     "title": "VjPerf",
@@ -56,8 +56,8 @@
     "posterImage": "./2022_VjPerf/ControlPanel.png",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id6",
     "title": "SmallVdos",
@@ -66,8 +66,8 @@
     "posterImage": "./2022_SmallVdos/nelly test 1.png",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id7",
     "title": "Sculpture_GrittinessInsideOut",
@@ -76,8 +76,8 @@
     "posterImage": "./2021_Sculpture_GrittinessInsideOut/Nelly_Reviron_10.jpg",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id8",
     "title": "Performance_BehindTheMasks",
@@ -86,26 +86,36 @@
     "posterImage": "./2021_Performance_BehindTheMasks/20210327_174414.00_04_49_21.Still014.jpg",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id9",
     "title": "Performance",
     "year": 2021,
-    "images": ["./2021_Performance/8.jpg", "./2021_Performance/3.jpg", "./2021_Performance/5.jpg"],
-    "posterImage": "./2021_Performance/8.jpg",
+    "images": ["./2021_Performance/5.jpg", "./2021_Performance/3.jpg", "./2021_Performance/8.jpg"],
+    "posterImage": "./2021_Performance/5.jpg",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 },{
     "id": "id10",
+    "title": "Sculpture_Contact",
+    "year": 2020,
+    "images": ["./2020_Sculpture_Contact/8.JPG", "./2020_Sculpture_Contact/1.JPG", "./2020_Sculpture_Contact/7.JPG", "./2020_Sculpture_Contact/10.JPG", "./2020_Sculpture_Contact/5.JPG", "./2020_Sculpture_Contact/6.JPG"],
+    "posterImage": "./2020_Sculpture_Contact/8.JPG",
+    "description": "",
+    "materials": [],
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
+},{
+    "id": "id11",
     "title": "Jontest",
     "year": 1981,
     "images": ["./1981_Jontest/jon.png"],
     "posterImage": "./1981_Jontest/jon.png",
     "description": "",
     "materials": [],
-    "pubDate": "2026-05-14",
-    "updatedDate": "2026-05-14"
+    "pubDate": "2026-05-20",
+    "updatedDate": "2026-05-20"
 }]
