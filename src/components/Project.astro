@@ -69,6 +69,12 @@ const imgSrc = await getImage({ src: imgPath, format: "webp" });
         word-wrap: break-word;
         word-break: break-all;
     }
+    @media (prefers-color-scheme: light) {
+        .project__title {
+            mix-blend-mode: difference;
+            filter: invert(1);
+        }
+    }
 
     .project__image {
         /* anchor-name: project-image; */
