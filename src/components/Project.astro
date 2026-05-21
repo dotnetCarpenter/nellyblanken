@@ -3,7 +3,7 @@
 import { getImage } from "astro:assets";
 
 const { imgPath, title, year, sponsors } = Astro.props;
-const imgSrc = await getImage({ src: imgPath, format: "webp", height: 240 });
+const imgSrc = await getImage({ src: imgPath, format: "webp", width: 460, height: 240 });
 
 const random = (min:number, max:number) => (Math.random() * (max - min)).toFixed(2);
 ---
