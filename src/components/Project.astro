@@ -2,12 +2,12 @@
 // import type { ImageTransform } from "astro";
 import { getImage } from "astro:assets";
 
-const { imgPath, title, year, sponsors } = Astro.props;
+const { imgPath, title, year, sponsors, tabindex } = Astro.props;
 const imgSrc = await getImage({ src: imgPath, format: "webp", width: 460, height: 240 });
 
 const random = (min:number, max:number) => (Math.random() * (max - min)).toFixed(2);
 ---
-<article class="project" style={`--data-random1: ${random(0,5)};--data-random2: ${random(0,5)};`}>
+<article class="project" tabindex={tabindex} style={`--data-random1: ${random(0,5)};--data-random2: ${random(0,5)};`}>
     <h3 class="project__title">{title}</h3>
     {sponsors?.logo && <img class="project__sponsors" src={sponsors.logo} alt="{sponsors.name}" />}
     <picture class="project__image">
@@ -66,7 +66,9 @@ const random = (min:number, max:number) => (Math.random() * (max - min)).toFixed
         /* background-color: black; */
         /* background-clip: text; */
     }
-    &:hover .project__year {
+    &:hover .project__year,
+    &:active .project__year,
+    &:focus .project__year {
         color: var(--color-text);
         -webkit-text-stroke: 0px var(--color-text);
     }

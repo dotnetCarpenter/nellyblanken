@@ -14,8 +14,12 @@ const allProjects = (await getCollection('projects'))
     <section class="projects">
         <h2 class="projects__title">Projects</h2>
         <div class="projects__list">
-            {allProjects.map(project => (
-                <Project title={project.data.title} imgPath={project.data["posterImage"]} year={project.data.year} sponsors={project.data.sponsors} />
+            {allProjects.map((project, i) => (
+                <Project tabindex={i+4} key={project.id}
+                         title={project.data.title}
+                         imgPath={project.data["posterImage"]}
+                         year={project.data.year}
+                         sponsors={project.data.sponsors} />
             ))}
         </div>
     </section>
