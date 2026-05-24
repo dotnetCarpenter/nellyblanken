@@ -6,6 +6,10 @@ SVG filter: https://kazzkiq.github.io/svg-color-filter/
 
 Effect Inspiration: https://codepen.io/search?q=svg+glitch+effect&cursor=Mg
 
+Font headlines: Proxima Nova Condensed Black
+Brødtekst: Proxima Nova Condensed Regular
+
+
 Hello :)
 
 1. Txt per project =
